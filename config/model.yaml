@@ -1,0 +1,64 @@
+model_selection:
+    model:
+      XGBClassifier:
+        search_param_grid:
+          learning_rate: 
+           - 0.1
+           - 0.01
+           - 0.001
+           
+          max_depth: 
+           - 3
+           - 5
+           - 7
+          
+          n_estimators: 
+           - 100
+           - 200
+           - 300
+          
+          gamma: 
+           - 0
+           - 0.1
+           - 0.2
+          
+          
+      GradientBoostingClassifier:
+        search_param_grid:
+          n_estimators:
+           - 100
+          criterion:
+           - friedman_mse
+
+      SVC:
+        search_param_grid:
+          C: 
+           - 0.1
+           - 1
+           - 10
+          kernel: 
+           - linear
+           - rbf
+          gamma: 
+           - 0.1
+           - 0.01
+           - 0.001
+
+      RandomForestClassifier:
+        search_param_grid:
+          n_estimators: 
+           - 100
+           - 200
+           - 300
+          max_depth: 
+           - None
+           - 5
+           - 10
+          min_samples_split: 
+           - 2
+           - 5
+           - 10
+          min_samples_leaf: 
+           - 1
+           - 2
+           - 4
