@@ -30,14 +30,20 @@ Here are some additional details about the dataset:
 
 
 ### To run this project
-1. pip install -r requirements.txt
-2. python app.py
-* Home Page
-3. http://localhost:5000 
+1. ```python
+   pip install -r requirements.txt
+2. ```python
+   python app.py
+
+### Home Page
+  
+3. Got to  **http://localhost:5000** 
 * For train the model go to below link>>>
-4. http://localhost:5000/train  
+4. Go To **http://localhost:5000/train**  
 * For prediction of data go to below link
-5. http://localhost:5000/predict
+5. Go To **http://localhost:5000/predict**
 6. Upload CSV file
 7. Output will save as csv file
-8. THANK YOU!
+
+ 
+ # THANK YOU!
